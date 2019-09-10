@@ -24,6 +24,10 @@
 #ifndef UTM_HEADER_GUARD_
 #define UTM_HEADER_GUARD_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // Converts a latitude/longitude pair to x and y coordinates in the
 // Universal Transverse Mercator projection.
 //
@@ -65,5 +69,9 @@ int utm_to_lat_lon(double easting,
 		   int southhemi,
 		   double *lat,
 		   double *lon);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
