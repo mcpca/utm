@@ -37,7 +37,7 @@ $(BUILDDIR)/static.o: utm.c | $(BUILDDIR)
 	$(CC) -c $(CFLAGS) $(STCFLAGS) $(INCLUDES) $< -o $@
 
 test: test.c libutm.a
-	$(CC) $(CFLAGS) -I./include -I./external/include -static $^ -lm -o $@
+	$(CC) $(CFLAGS) -I./include -I./external/include $^ -lm -o $@
 
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
