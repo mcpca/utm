@@ -1,0 +1,19 @@
+# vim: filetype=conf
+---
+Language: Cpp
+Standard: Cpp11
+BasedOnStyle: LLVM
+ColumnLimit: 80
+UseTab: Always
+IndentWidth: 8
+AccessModifierOffset: -4 
+AlignTrailingComments: true
+AllowShortIfStatementsOnASingleLine: false
+AllowAllParametersOfDeclarationOnNextLine: true
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBraces: Linux
+BinPackArguments: false
+BinPackParameters: false
+IndentCaseLabels: false
+
+PenaltyReturnTypeOnItsOwnLine: 65535
