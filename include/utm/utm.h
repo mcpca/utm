@@ -40,8 +40,7 @@
 //
 // Returns:
 // 	The UTM zone, or -1 if x or y is null or the passed zone is invalid.
-int
-lat_lon_to_utm(
+int lat_lon_to_utm(
     double lat, double lon, int const *zone, double *easting, double *northing);
 
 // Converts x and y coordinates in the Universal Transverse Mercator
@@ -60,12 +59,11 @@ lat_lon_to_utm(
 //
 // Returns:
 // 	Zero, or -1 if lat or lon is null.
-int
-utm_to_lat_lon(double easting,
-	       double northing,
-	       int zone,
-	       int southhemi,
-	       double *lat,
-	       double *lon);
+int utm_to_lat_lon(double easting,
+		   double northing,
+		   int zone,
+		   int southhemi,
+		   double *lat,
+		   double *lon);
 
 #endif
